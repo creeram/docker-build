@@ -1,5 +1,5 @@
 FROM buildpack-deps:buster-curl as builder
-ARG VERSION=28.0
+ARG VERSION=25.0
 
 RUN apt update && apt install gnupg2 curl -y && \
     rm -rf /var/lib/apt/lists/*
